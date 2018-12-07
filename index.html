@@ -34,23 +34,54 @@
 
     <!-- ---------------------------------------------------------------------- -->
     <script id="user-template" type="text/x-handlebars-template">
-        <!-- Write Main User Handlebars template here -->
+
+
+
+                <img id="profile-pic" src="{{picture.large}}">
+                  <div class="user-info"><h1>{{name.first}}  {{name.last}}  </h1><span><p>{{location.city}} - {{location.state}}</p></span></div>
+                  
+                
+                
     </script>
     <!-- ------------------------------------------------------------------------->
     <script id="user-friends-template" type="text/x-handlebars-template">
-        <!-- Write Friend List Handlebars template here  -->
+
+
+                <ul>
+                 {{#each users}}
+                  <li>{{name.first}} {{name.last}}</li>
+                {{/each}}
+                </ul>
     </script>
     <!-- ---------------------------------------------------------------------- -->
     <script id="quote-template" type="text/x-handlebars-template">
-        <!-- Write Quote Handlebars template here -->
+
+
+
+
+                  <div class="quote-container>p">{{quote}}</div>
+                
+                
     </script>
     <!-- ---------------------------------------------------------------------- -->
     <script id="pokemon-template" type="text/x-handlebars-template">
-        <!-- Write Pokemon Handlebars template here -->
+
+        
+        <div id="pokemon-text"><h3>{{forms.0.name}}</h3></div>
+        <img id="pokemon-image" src="{{sprites.front_default}}">
+                  
+                
+                
     </script>
     <!-- ---------------------------------------------------------------------- -->
     <script id="meat-template" type="text/x-handlebars-template">
-        <!-- Write Meat Handlebars template here -->
+
+        
+                
+              
+                  <div class="meat-text">{{meatText}}</div>
+                
+                
     </script>
     <!-- ---------------------------------------------------------------------- -->
 
